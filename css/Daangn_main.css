@@ -49,8 +49,14 @@ main {
   position: fixed;
   bottom: 50px;
   right: 20px;
-  background-color: coral;
+  background-color: var(--button-primary);
   border-radius: 20px;
   bottom: 150px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.write-button:hover {
+  background-color: var(--button-hover);
 }
