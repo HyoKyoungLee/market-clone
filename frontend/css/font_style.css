@@ -1,0 +1,35 @@
+@import "reset.css";
+@import "Daangn_header.css";
+@import "Daangn_footer.css";
+@import "Daangn_main.css";
+
+/* 색상 변수 정의 */
+:root {
+  --button-primary: rgb(254, 111, 15);
+  --button-hover: rgb(254, 111, 15, 0.8);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+.media-info-msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+@media screen and (max-width: 550px) {
+  .media-info-msg {
+    display: none;
+  }
+}

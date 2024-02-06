@@ -1,0 +1,52 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  /*vw : view-width, 우리가 보는 화면의 n%를 채우는 것*/
+  width: 100vw;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(232, 232, 232);
+  background-color: white;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  /*배치를 수직으로 바꿔줌*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  cursor: pointer;
+}
+
+.footer-icons__dec {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+@keyframes icons-move-up {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.footer-icons__img {
+  width: 50px;
+}
+
+.footer-icons:hover .footer-icons__img {
+  animation: 1s icons-move-up;
+}

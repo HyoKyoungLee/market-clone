@@ -1,0 +1,70 @@
+main {
+  padding: 20px 20px 130px 20px;
+}
+
+.items-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  padding: 20px 0 20px 0;
+}
+
+.items-list__img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 8px;
+  margin: 0 20px 0 20px;
+  /* 삐져나온 부분을 안보이게 함 */
+  overflow: hidden;
+}
+
+.items-list__img img {
+  width: 150px;
+  height: 150px;
+}
+
+.items-list__info {
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.items-list__info div {
+  margin-top: 10px;
+}
+
+.items-list__info-meta {
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.items-list__info-price {
+  font-weight: bold;
+}
+
+.write-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 80px;
+  height: 30px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: var(--button-primary);
+  border-radius: 20px;
+  bottom: 150px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.write-button:hover {
+  background-color: var(--button-hover);
+}
